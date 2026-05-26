@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="Ruan Bester personal portfolio. Creative developer, designer, and digital craftsman based in South Africa." />
+  <meta name="theme-color" content="#0a0a0f" />
+  <title>Ruan Bester - Portfolio</title>
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Ruan Bester - Portfolio" />
+  <meta property="og:description" content="Creative developer, designer, and digital craftsman based in South Africa." />
+  <meta property="og:image" content="images/Ruan3.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Ruan Bester - Portfolio" />
+  <meta name="twitter:image" content="images/Ruan3.jpg" />
+  <link rel="preload" as="image" href="images/Ruan3.jpg" fetchpriority="high" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Ruan Bester","birthDate":"2006-10-25","jobTitle":"Creative developer and designer","nationality":"South African"}</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext x='50%25' y='52%25' font-family='Playfair Display, serif' font-weight='700' font-size='70' fill='%23d4af37' text-anchor='middle' dominant-baseline='middle'%3ERB%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <div class="preloader" id="preloader">
+    <div class="preloader__inner">
+      <div class="preloader__logo"><span>R</span><span>B</span></div>
+      <div class="preloader__bar"><div class="preloader__bar-fill"></div></div>
+      <div class="preloader__caption">Crafting the experience...</div>
+    </div>
+  </div>
+
+  <div class="scroll-progress"><div class="scroll-progress__fill" id="scrollProgress"></div></div>
+
+  <div class="bg-grid"></div>
+  <div class="bg-noise"></div>
+  <div class="bg-orb bg-orb--1"></div>
+  <div class="bg-orb bg-orb--2"></div>
+  <div class="bg-orb bg-orb--3"></div>
+
+  <header class="nav" id="nav">
+    <a href="#home" class="nav__brand" aria-label="Home">
+      <span class="nav__monogram">RB</span>
+      <span class="nav__brand-text">Ruan&nbsp;Bester</span>
+    </a>
+
+    <nav class="nav__links" id="navLinks">
+      <a href="#home" class="nav__link"><span>01</span>Home</a>
+      <a href="#about" class="nav__link"><span>02</span>About</a>
+      <a href="#skills" class="nav__link"><span>03</span>Skills</a>
+      <a href="#work" class="nav__link"><span>04</span>Work</a>
+      <a href="#achievements" class="nav__link"><span>05</span>Awards</a>
+      <a href="#contact" class="nav__link"><span>06</span>Contact</a>
+    </nav>
+
+    <a href="#contact" class="nav__cta magnetic">
+      <span>Get in touch</span>
+      <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+    </a>
+
+    <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home">
+      <div class="hero__bg-rings"></div>
+
+      <div class="hero__container">
+        <div class="hero__left">
+          <h1 class="hero__title">
+            <span class="reveal-line"><span>Ruan</span></span>
+            <span class="reveal-line"><span class="hero__title-italic">Bester.</span></span>
+          </h1>
+
+          <p class="hero__lede reveal">
+            A <strong>creative developer</strong> and <strong>digital craftsman</strong> building thoughtful, high-end products with a cleaner eye for detail.
+          </p>
+
+          <div class="hero__meta reveal">
+            <div class="hero__meta-item">
+              <span class="hero__meta-label">Based in</span>
+              <span class="hero__meta-value">South Africa</span>
+            </div>
+            <div class="hero__meta-divider"></div>
+            <div class="hero__meta-item">
+              <span class="hero__meta-label">Born</span>
+              <span class="hero__meta-value">25 Oct 2006</span>
+            </div>
+            <div class="hero__meta-divider"></div>
+            <div class="hero__meta-item">
+              <span class="hero__meta-label">Focus</span>
+              <span class="hero__meta-value">Web - UX - Brand</span>
+            </div>
+          </div>
+
+          <div class="hero__cta reveal">
+            <a href="#location" class="btn btn--primary magnetic">
+              <span class="btn__label">Explore my base</span>
+              <span class="btn__icon">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+              </span>
+            </a>
+            <a href="#contact" class="btn btn--ghost magnetic">
+              <span class="btn__label">Start a project</span>
+            </a>
+          </div>
+        </div>
+
+          <div class="hero__right">
+          <div class="hero__portrait" data-tilt>
+            <div class="hero__portrait-frame">
+              <img src="images/Ruan3.jpg" alt="Portrait of Ruan Bester" class="hero__portrait-img" width="1080" height="1440" fetchpriority="high" decoding="async" />
+              <div class="hero__portrait-shine"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="hero__scroll" aria-label="Scroll to about">
+        <span class="hero__scroll-label">Scroll</span>
+        <span class="hero__scroll-line"><span></span></span>
+      </a>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="section__header reveal">
+          <div class="section__tag"><span>02</span>About</div>
+          <h2 class="section__title">A short <em>introduction</em>.</h2>
+          <p class="section__sub">The person behind the pixels.</p>
+        </div>
+
+        <div class="about__grid">
+          <div class="about__media reveal">
+            <div class="about__media-frame">
+              <img src="images/Ruan1.jpg" alt="Ruan Bester" loading="lazy" decoding="async" width="1080" height="1440" />
+              <div class="about__media-stripe"></div>
+            </div>
+            <div class="about__media-caption">
+              <span>Portrait - 01</span>
+              <span>2026</span>
+            </div>
+          </div>
+
+          <div class="about__copy">
+            <p class="about__quote reveal">
+              "I build the kind of work I want to come back to - calm, considered, and confident."
+            </p>
+
+            <div class="about__body reveal">
+              <p>I'm <strong>Ruan Bester</strong>, a developer and designer from <strong>Randburg, Johannesburg</strong> with a strong interest in clean systems, sharp typography, and digital work that feels considered from the first glance to the last interaction.</p>
+              <p>I completed <strong>matric in 2025</strong> and I am building practical experience through real projects, self-teaching, and a work style grounded in communication, reliability, and a willingness to learn quickly.</p>
+            </div>
+
+            <div class="about__stats reveal">
+              <div class="about__stat">
+                <div class="about__stat-num" data-count="40">0</div>
+                <div class="about__stat-label">Projects shipped</div>
+              </div>
+              <div class="about__stat">
+                <div class="about__stat-num" data-count="6">0</div>
+                <div class="about__stat-label">Years writing code</div>
+              </div>
+              <div class="about__stat">
+                <div class="about__stat-num" data-count="18">0</div>
+                <div class="about__stat-label">Tools mastered</div>
+              </div>
+              <div class="about__stat">
+                <div class="about__stat-num" data-count="100" data-suffix="%">0</div>
+                <div class="about__stat-label">Client retention</div>
+              </div>
+            </div>
+
+            <div class="about__tags reveal">
+              <span class="chip">Curious</span>
+              <span class="chip">Detail-obsessed</span>
+              <span class="chip">Self-taught</span>
+              <span class="chip">Visual thinker</span>
+              <span class="chip">Quietly competitive</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section snapshot" id="snapshot">
+      <div class="container">
+        <div class="section__header reveal">
+          <div class="section__tag"><span>02b</span>CV Snapshot</div>
+          <h2 class="section__title">The grounded <em>version</em>.</h2>
+          <p class="section__sub">A cleaner read of the practical details from the CV, shaped into something that still feels like the site.</p>
+        </div>
+
+        <div class="snapshot__grid">
+          <article class="snapshot__card snapshot__card--lead reveal">
+            <div class="snapshot__eyebrow">Profile</div>
+            <h3 class="snapshot__title">Motivated, people-friendly, and ready to keep learning fast.</h3>
+            <p class="snapshot__copy">I am a South African matriculant with clear communication skills, a positive attitude toward learning, and the kind of reliability that helps a team move without drama.</p>
+            <p class="snapshot__copy">I enjoy solving problems, supporting daily tasks, and bringing a professional, respectful presence into the room whether the work is technical, creative, or client-facing.</p>
+            <div class="snapshot__chips">
+              <span class="chip">Randburg, Johannesburg</span>
+              <span class="chip">Matric completed in 2025</span>
+              <span class="chip">Open to junior roles</span>
+              <span class="chip">Fast learner</span>
+            </div>
+          </article>
+
+          <article class="snapshot__card reveal">
+            <div class="snapshot__eyebrow">Personal Details</div>
+            <ul class="snapshot__list">
+              <li><span>Base</span><strong>Randburg, Johannesburg, Gauteng</strong></li>
+              <li><span>Nationality</span><strong>South African</strong></li>
+              <li><span>Email</span><strong><a href="mailto:ruanbester6@icloud.com">ruanbester6@icloud.com</a></strong></li>
+              <li><span>Phone</span><strong><a href="https://wa.me/27722996492">072 299 6492</a></strong></li>
+            </ul>
+          </article>
+
+          <article class="snapshot__card reveal">
+            <div class="snapshot__eyebrow">Education</div>
+            <h3 class="snapshot__minor-title">Help Mekaar High School</h3>
+            <p class="snapshot__copy">Matric / Grade 12 completed in <strong>2025</strong>. The foundation is academic, but the direction is practical: build strong real-world experience and keep sharpening both communication and digital craft.</p>
+          </article>
+
+          <article class="snapshot__card reveal">
+            <div class="snapshot__eyebrow">Strengths</div>
+            <ul class="snapshot__bullet-list">
+              <li>Strong communication and people skills</li>
+              <li>Attention to detail and accuracy</li>
+              <li>Teamwork, initiative, and willingness to help</li>
+              <li>Basic computer literacy and comfort with digital tools</li>
+            </ul>
+          </article>
+
+          <article class="snapshot__card reveal">
+            <div class="snapshot__eyebrow">Work Readiness</div>
+            <p class="snapshot__copy">Even while formal work experience is still growing, I am ready to contribute in an internship or junior role by learning quickly, following instructions well, and bringing a calm, professional attitude to the work.</p>
+          </article>
+
+          <article class="snapshot__card reveal">
+            <div class="snapshot__eyebrow">Personal Attributes</div>
+            <div class="snapshot__traits">
+              <span class="chip">Hard-working</span>
+              <span class="chip">Quick learner</span>
+              <span class="chip">Good listener</span>
+              <span class="chip">Well-spoken</span>
+              <span class="chip">Team player</span>
+              <span class="chip">Positive attitude</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills" id="skills">
+      <div class="container">
+        <div class="section__header reveal">
+          <div class="section__tag"><span>03</span>Skills</div>
+          <h2 class="section__title">The <em>toolkit</em>.</h2>
+          <p class="section__sub">A focused list of what I use most and where I go deepest.</p>
+        </div>
+
+        <div class="skills__grid">
+          <article class="skill-card reveal" data-tilt>
+            <div class="skill-card__head">
+              <div class="skill-card__icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6">
+                  <path d="M4 6h16M4 12h16M4 18h10"/>
+                </svg>
+              </div>
+              <span class="skill-card__index">01</span>
+            </div>
+            <h3 class="skill-card__title">Front-end</h3>
+            <p class="skill-card__desc">Interfaces that feel polished, readable, responsive, and intentional.</p>
+            <ul class="skill-card__list">
+              <li><span>HTML and CSS</span><span class="skill-card__level" data-level="95"></span></li>
+              <li><span>JavaScript / TS</span><span class="skill-card__level" data-level="88"></span></li>
+              <li><span>React and Next.js</span><span class="skill-card__level" data-level="82"></span></li>
+              <li><span>Tailwind and GSAP</span><span class="skill-card__level" data-level="86"></span></li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal" data-tilt>
+            <div class="skill-card__head">
+              <div class="skill-card__icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6">
+                  <path d="M12 2 4 7v10l8 5 8-5V7z"/><path d="M12 12 4 7M12 12l8-5M12 12v10"/>
+                </svg>
+              </div>
+              <span class="skill-card__index">02</span>
+            </div>
+            <h3 class="skill-card__title">Back-end</h3>
+            <p class="skill-card__desc">Quiet, dependable systems that keep the front-end experience sharp.</p>
+            <ul class="skill-card__list">
+              <li><span>Node and Express</span><span class="skill-card__level" data-level="80"></span></li>
+              <li><span>Python and FastAPI</span><span class="skill-card__level" data-level="72"></span></li>
+              <li><span>PostgreSQL and SQLite</span><span class="skill-card__level" data-level="76"></span></li>
+              <li><span>REST and GraphQL</span><span class="skill-card__level" data-level="70"></span></li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal" data-tilt>
+            <div class="skill-card__head">
+              <div class="skill-card__icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6">
+                  <circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/>
+                </svg>
+              </div>
+              <span class="skill-card__index">03</span>
+            </div>
+            <h3 class="skill-card__title">Design</h3>
+            <p class="skill-card__desc">Typography, hierarchy, layout, and the visual language behind the whole product.</p>
+            <ul class="skill-card__list">
+              <li><span>Figma and auto-layout</span><span class="skill-card__level" data-level="92"></span></li>
+              <li><span>Brand systems</span><span class="skill-card__level" data-level="78"></span></li>
+              <li><span>Type and hierarchy</span><span class="skill-card__level" data-level="85"></span></li>
+              <li><span>Motion and prototyping</span><span class="skill-card__level" data-level="74"></span></li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal" data-tilt>
+            <div class="skill-card__head">
+              <div class="skill-card__icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6">
+                  <path d="M3 12h4l3-8 4 16 3-8h4"/>
+                </svg>
+              </div>
+              <span class="skill-card__index">04</span>
+            </div>
+            <h3 class="skill-card__title">Craft</h3>
+            <p class="skill-card__desc">Taste, judgment, and follow-through that help the final work stay strong.</p>
+            <ul class="skill-card__list">
+              <li><span>Problem solving</span><span class="skill-card__level" data-level="92"></span></li>
+              <li><span>Self direction</span><span class="skill-card__level" data-level="94"></span></li>
+              <li><span>Written communication</span><span class="skill-card__level" data-level="86"></span></li>
+              <li><span>Taste and restraint</span><span class="skill-card__level" data-level="90"></span></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section work" id="work">
+      <div class="container">
+        <div class="section__header reveal">
+          <div class="section__tag"><span>04</span>Work</div>
+          <h2 class="section__title">Selected <em>work</em>.</h2>
+          <p class="section__sub">Keeping this section quiet for now while the next case studies are being prepared.</p>
+        </div>
+
+        <div class="work__empty reveal">
+          <div class="work__empty-tag">Archive paused</div>
+          <h3 class="work__empty-title">Projects are off the wall for the moment.</h3>
+          <p class="work__empty-copy">I want the work section to return with stronger case studies instead of filler. For now, the best move is to reach out directly and ask what I have been building lately.</p>
+          <a href="#contact" class="btn btn--ghost work__empty-link">
+            <span class="btn__label">Ask for recent work</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section location" id="location">
+      <div class="container">
+        <div class="location__panel">
+          <div class="location__copy reveal">
+            <div class="section__tag"><span>04b</span>Location</div>
+            <h2 class="section__title">Working from <em>South Africa</em>.</h2>
+            <p class="section__sub">This now has its own section. Hold and drag the globe to rotate it, then let go and it will keep moving.</p>
+
+            <div class="location__facts">
+              <div class="location__fact">
+                <span class="location__fact-label">Base</span>
+                <span class="location__fact-value">Randburg, Johannesburg</span>
+              </div>
+              <div class="location__fact">
+                <span class="location__fact-label">Coordinates</span>
+                <span class="location__fact-value">-26.09 S / 27.99 E</span>
+              </div>
+              <div class="location__fact">
+                <span class="location__fact-label">Timezone</span>
+                <span class="location__fact-value">GMT+2</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="location__visual reveal">
+              <div class="location-globe-card">
+                <div class="location-globe-card__label">Working from</div>
+              <div class="location-globe">
+                <div class="location-globe__halo"></div>
+                <canvas id="globeCanvas" class="globe__canvas" aria-label="Interactive globe centered near South Africa"></canvas>
+                <div class="globe__overlay">
+                  <span class="globe__pin"></span>
+                  <div class="globe__meta">
+                    <div class="globe__place">Randburg, Johannesburg</div>
+                    <div class="globe__coords">-26.09 S - 27.99 E - GMT+2</div>
+                  </div>
+                </div>
+              </div>
+              <div class="location-globe-card__hint">Hold and drag to rotate</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section experience">
+      <div class="container">
+        <div class="section__header reveal">
+          <div class="section__tag"><span>04c</span>Experience</div>
+          <h2 class="section__title">The <em>path</em> so far.</h2>
+          <p class="section__sub">A short timeline of roles, studies, and turning points.</p>
+        </div>
+
+        <ol class="timeline">
+          <li class="timeline__item reveal">
+            <div class="timeline__marker"></div>
+            <div class="timeline__year">2026 -></div>
+            <div class="timeline__card">
+              <div class="timeline__role">Freelance - Independent</div>
+              <h3 class="timeline__title">Designing and building for select clients</h3>
+              <p>Working with founders and small teams on identity, product thinking, and the front-end that ties it together.</p>
+            </div>
+          </li>
+          <li class="timeline__item reveal">
+            <div class="timeline__marker"></div>
+            <div class="timeline__year">2024 - 2025</div>
+            <div class="timeline__card">
+              <div class="timeline__role">Side projects - Studies</div>
+              <h3 class="timeline__title">Sharpening the craft</h3>
+              <p>A period of self-teaching, experimentation, and the kind of work that shaped the taste behind this site.</p>
+            </div>
+          </li>
+          <li class="timeline__item reveal">
+            <div class="timeline__marker"></div>
+            <div class="timeline__year">2022 - 2023</div>
+            <div class="timeline__card">
+              <div class="timeline__role">First commercial work</div>
+              <h3 class="timeline__title">Early websites and brand work</h3>
+              <p>Learning scope, communication, and how to ship work that people actually use.</p>
+            </div>
+          </li>
+          <li class="timeline__item reveal">
+            <div class="timeline__marker"></div>
+            <div class="timeline__year">2020</div>
+            <div class="timeline__card">
+              <div class="timeline__role">The beginning</div>
+              <h3 class="timeline__title">First lines of code</h3>
+              <p>The point where curiosity turned into craft and never really let go.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section achievements" id="achievements">
+      <div class="container">
+        <div class="section__header reveal">
+          <div class="section__tag"><span>05</span>Awards</div>
+          <h2 class="section__title">A few <em>milestones</em>.</h2>
+          <p class="section__sub">This area can grow over time as the right work earns the right stories.</p>
+        </div>
+
+        <div class="awards">
+          <article class="award reveal">
+            <div class="award__num">01</div>
+            <div class="award__body">
+              <h3>Recognition placeholder</h3>
+              <p>A future space for standout moments worth documenting properly.</p>
+            </div>
+            <div class="award__year">2026</div>
+          </article>
+          <article class="award reveal">
+            <div class="award__num">02</div>
+            <div class="award__body">
+              <h3>Feature or publication</h3>
+              <p>A simple placeholder for a write-up, feature, or interview once it happens.</p>
+            </div>
+            <div class="award__year">2025</div>
+          </article>
+          <article class="award reveal">
+            <div class="award__num">03</div>
+            <div class="award__body">
+              <h3>Community contribution</h3>
+              <p>A future slot for talks, mentoring, workshops, or other useful contributions.</p>
+            </div>
+            <div class="award__year">2025</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="contact__inner">
+          <div class="contact__head reveal">
+            <div class="section__tag"><span>06</span>Contact</div>
+            <h2 class="contact__title">
+              <span>Let's talk about</span>
+              <span class="contact__title-italic">what you want to build.</span>
+            </h2>
+            <p class="contact__sub">Email is best for proper briefs. WhatsApp is perfect for quick messages, check-ins, and follow-ups.</p>
+          </div>
+
+          <div class="contact__grid">
+            <form class="contact__form reveal" id="contactForm" novalidate>
+              <div class="field">
+                <input type="text" id="cf-name" placeholder=" " required autocomplete="name" />
+                <label for="cf-name">Your name</label>
+                <div class="field__line"></div>
+              </div>
+              <div class="field">
+                <input type="email" id="cf-email" placeholder=" " required autocomplete="email" />
+                <label for="cf-email">Email address</label>
+                <div class="field__line"></div>
+              </div>
+              <div class="field">
+                <input type="text" id="cf-subject" placeholder=" " />
+                <label for="cf-subject">Project or subject</label>
+                <div class="field__line"></div>
+              </div>
+              <div class="field field--area">
+                <textarea id="cf-message" rows="5" placeholder=" " required></textarea>
+                <label for="cf-message">Tell me about it...</label>
+                <div class="field__line"></div>
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--full magnetic">
+                <span class="btn__label">Send message</span>
+                <span class="btn__icon">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+                </span>
+              </button>
+
+              <div class="contact__form-note" id="formNote" aria-live="polite"></div>
+            </form>
+
+            <aside class="contact__aside reveal">
+              <div class="contact__card">
+                <div class="contact__card-label">Email</div>
+                <a href="mailto:ruanbester6@icloud.com" class="contact__card-value">ruanbester6@icloud.com</a>
+              </div>
+              <div class="contact__card">
+                <div class="contact__card-label">WhatsApp</div>
+                <a href="https://wa.me/27722996492" class="contact__card-value">072 299 6492</a>
+              </div>
+              <div class="contact__card contact__card--accent">
+                <div class="contact__card-label">Best way to reach me</div>
+                <div class="contact__card-value contact__card-value--stack">Email for detailed briefs. WhatsApp for fast conversations and quick follow-ups.</div>
+              </div>
+              <div class="contact__quick-actions">
+                <a href="mailto:ruanbester6@icloud.com" class="btn btn--primary btn--full">Email me</a>
+                <a href="https://wa.me/27722996492" class="btn btn--ghost btn--full">Message on WhatsApp</a>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__left">
+        <div class="footer__mono">RB</div>
+        <div>
+          <div class="footer__name">Ruan Bester</div>
+          <div class="footer__role">Creative developer and designer</div>
+        </div>
+      </div>
+
+      <div class="footer__center">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer__right">
+        <div class="footer__copy">&copy; <span id="year">2026</span> Ruan Bester</div>
+        <div class="footer__fine">Built with care from South Africa.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
